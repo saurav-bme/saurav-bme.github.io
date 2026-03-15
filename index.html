@@ -10,42 +10,74 @@
 <style>
 
 body{
-font-family: Arial;
+font-family: 'Segoe UI', sans-serif;
 background:#f4f6f8;
+margin:0;
+}
+
+header{
+background:#1e293b;
+color:white;
+padding:40px 20px;
 text-align:center;
-margin:40px;
+}
+
+header h1{
+margin:0;
+font-size:36px;
+}
+
+header p{
+margin:5px;
+font-size:18px;
 }
 
 .container{
-max-width:800px;
+max-width:900px;
 margin:auto;
+padding:20px;
 }
 
 .card{
 background:white;
 padding:25px;
-margin:20px;
+margin:20px 0;
 border-radius:10px;
-box-shadow:0 4px 10px rgba(0,0,0,0.1);
+box-shadow:0 4px 12px rgba(0,0,0,0.1);
 }
 
-h1{
-color:#333;
+h2{
+margin-top:0;
 }
 
-a{
-text-decoration:none;
-color:#0077cc;
-font-weight:bold;
+.project{
+padding:10px;
+border-bottom:1px solid #eee;
 }
 
 .button{
-background:#0077cc;
-color:white;
-padding:12px 20px;
-border-radius:6px;
 display:inline-block;
-margin-top:10px;
+background:#2563eb;
+color:white;
+padding:10px 20px;
+border-radius:6px;
+text-decoration:none;
+margin:5px;
+}
+
+.button:hover{
+background:#1d4ed8;
+}
+
+.links a{
+margin:10px;
+font-weight:bold;
+color:#2563eb;
+text-decoration:none;
+}
+
+.links a:hover{
+text-decoration:underline;
 }
 
 </style>
@@ -54,61 +86,64 @@ margin-top:10px;
 
 <body>
 
-<div class="container">
+<header>
 
 <h1>Saurav Kafle</h1>
-<h3>Aspiring Biomedical Engineer</h3>
+
+<p>Aspiring Biomedical Engineer</p>
+
+</header>
+
+<div class="container">
 
 <div class="card">
 
 <h2>About Me</h2>
 
 <p>
-Biomedical Engineering student at KPR Institute of Engineering and Technology interested in medical device innovation, embedded systems and rehabilitation technologies.
+Biomedical Engineering student at KPR Institute of Engineering and Technology interested in
+medical device innovation, embedded systems and rehabilitation technologies.
 </p>
 
 </div>
+
 
 <div class="card">
 
 <h2>Projects</h2>
 
-<p>NeuroGlow – LED Triggered Response Therapy Device</p>
+<div class="project">NeuroGlow – LED Triggered Response Therapy Device</div>
 
-<p>Foot Plantar Pressure Measurement System</p>
+<div class="project">Foot Plantar Pressure Measurement System</div>
 
-<p>Voice Controlled Lighting System</p>
+<div class="project">Voice Controlled Lighting System</div>
 
 </div>
+
 
 <div class="card">
 
 <h2>My Resume</h2>
 
-<p>You can view my CV online or download it.</p>
+<a class="button" href="Saurav_Kafle_Resume.pdf" target="_blank">View CV</a>
 
-<a class="button" href="Saurav_Kafle_Resume.pdf" target="_blank">
-View CV
-</a>
-
-<br><br>
-
-<a class="button" href="Saurav_Kafle_Resume.pdf" download>
-Download CV
-</a>
+<a class="button" href="Saurav_Kafle_Resume.pdf" download>Download CV</a>
 
 </div>
 
-<div class="card">
+
+<div class="card links">
 
 <h2>Profiles</h2>
 
 <p>
-<a href="https://github.com/saurav-bme">GitHub</a>
-</p>
 
-<p>
+<a href="https://github.com/saurav-bme">GitHub</a>
+
+|
+
 <a href="https://www.linkedin.com/in/saurav-kafle-0b15942a5">LinkedIn</a>
+
 </p>
 
 </div>
